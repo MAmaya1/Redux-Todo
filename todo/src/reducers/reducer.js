@@ -1,5 +1,4 @@
 import { ADD_ITEM, TOGGLE_ITEM } from "../actions";
-import '../index.css'
 
 const initialState = {
     todos: [
