@@ -1,3 +1,4 @@
+import { ADD_ITEM } from "../actions";
 
 
 const initialState = {
@@ -7,7 +8,19 @@ const initialState = {
 }
 
 function reducer(state = initialState, action) {
-    return state;
+    switch (action.type) {
+        case ADD_ITEM:
+            return {
+                ...state,
+                todos: [
+                    ...state.todos,
+                    {value: action.payload, completed: false, id: Date.now()}
+                ]
+            }
+
+        default:
+            return state;
+    }
 }
 
 export default reducer;
