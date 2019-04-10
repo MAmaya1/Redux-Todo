@@ -18,13 +18,19 @@ const Form = styled.form`
         width: 200px;
         margin-right: 10px;
     }
+`
 
-    button {
-        padding: 8px;
-        color: white;
-        border: 2px solid grey;
-        background: white;
-        color: black;
+const SubmitBtn = styled.button`
+    padding: 8px;
+    color: white;
+    border: 1px solid grey;
+    background: white;
+    color: black;
+    cursor: pointer;
+
+    &:hover {
+        background: lightgrey;
+        transition: all 200ms ease;
     }
 `
 
@@ -56,7 +62,7 @@ class AddItemForm extends React.Component {
                     placeholder="Add new item"
                     onChange={this.handleChanges}
                 />
-                <button onClick={this.addItem}>Submit</button>
+                <SubmitBtn onClick={this.addItem}>Submit</SubmitBtn>
             </Form>
         )
     }

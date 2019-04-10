@@ -8,14 +8,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
   background: lightgrey;
+  font-size: 1.2rem;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-
 
 .completed {
   text-decoration: line-through;
